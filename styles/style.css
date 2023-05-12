@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+/* font-family: 'Inter', sans-serif; Font-weight: 300 y 700*/
+
+/* token -> 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 */
+
+:root {
+  /* --colors-- */
+  --darkBlue100: #609ED4;
+  --darkBlue200: #356EA9;
+  --darkBlue300: #0A3871;
+  --darkBlue400: #072B61;
+  --darkBlue500: #052051;
+
+  --lightBlue100: #F3F5FC;
+  --lightBlue200: #EFF1FA;
+  --lightBlue300: #E9ECF8;
+  --lightBlue400: #AAB2D5;
+  --lightBlue500: #757FB2;
+
+  --gray100: #CED4DA;
+  --gray200: #ADB5BD;
+  --gray300: #868E96;
+  --gray400: #495057;
+  --gray500: #343A40;
+
+  /* fonts */
+  --mainFont: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--mainFont);
+  color: var(--darkBlue400);
+  /* background-color: #E5E5E5; */
+  background-color: var(--lightBlue200);
+}
+
+/* globals */
+.container {
+  min-height: 100vh;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* components */
+.outputBox {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  background-color: #FFF;
+  border-radius: 3.2rem;
+  padding: 1rem 2rem;
+}
+
+.btn {
+  color: var(--gray100);
+  background-color: var(--darkBlue400);
+  font-size: 2rem;
+  border-radius: 2.4rem;
+  padding: 1rem 6.4rem;
+  border: none;
+  margin-top: 3rem;
+}
