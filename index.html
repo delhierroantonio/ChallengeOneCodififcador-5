@@ -8,19 +8,27 @@
   <link rel="stylesheet" href="/assets/styles/style.css">
   <title>Encriptador | Oracle One Grupo 5</title>
 </head>
-<!-- Desencripta nuestro mensaje secreto!
-  fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober! 
--->
 <body>
   <header>
-    <nav>
-      <picture><img src="/assets/images/alura-logo.png" alt="alura company logo"></picture>
-      <span>#challengeonecodificador5</span>
+    <nav class="nav flex-row">
+      <picture class="nav__logo"><img src="/assets/images/alura-logo.png" alt="alura company logo"></picture>
+      <span class="nav__about">#challengeonecodificador5</span>
     </nav>
   </header>
-  <main>
-
-  <main />
+  <main class="main">
+    <section class="inputSection container">
+      <textarea class="inputSection__input" spellcheck="false" placeholder="Ingrese el texto aqui"></textarea>
+      <span class="inputSection__info"><img src="/assets/images/info-icon.png" alt="info icon">Solo letras minúsculas y sin acentos</span>
+      <div class="inputSection__buttons flex-row">
+        <button class="btn-dark">Encriptar</button>
+        <button class="btn-dark">Desencriptar</button>
+      </div>
+    </section>
+    <section class="outputSection container">
+      <p class="outputSection__output">Ningun mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.</p>
+      <button class="outputSection__btn btn-dark">Copiar</button>
+    </section>
+  </main>
   <footer>
 
   </footer>
