@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/assets/styles/style.css">
   <title>Encriptador | Oracle One Grupo 5</title>
 </head>
@@ -17,21 +18,35 @@
   </header>
   <main class="main">
     <section class="inputSection container">
-      <textarea class="inputSection__input" spellcheck="false" placeholder="Ingrese el texto aqui"></textarea>
+      <textarea class="inputSection__input" spellcheck="false" placeholder="Ingrese el texto a encriptar o desencriptar aqui!"></textarea>
       <span class="inputSection__info"><img src="/assets/images/info-icon.png" alt="info icon">Solo letras minúsculas y sin acentos</span>
       <div class="inputSection__buttons flex-row">
-        <button class="btn-dark">Encriptar</button>
-        <button class="btn-dark">Desencriptar</button>
+        <button id="encrypt" class="btn-dark">Encriptar</button>
+        <button id="decrypt" class="btn-dark">Desencriptar</button>
       </div>
     </section>
     <section class="outputSection container">
-      <p class="outputSection__output">Ningun mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.</p>
-      <button class="outputSection__btn btn-dark">Copiar</button>
+      <img src="/assets/images/illustration.svg" alt="user web interface illustration" id="outputSection__img" class="outputSection__img">
+      <textarea spellcheck="false" placeholder="Ningun mensaje fue encontrado. El texto por encriptar/desencriptar aparecera aqui." readonly id="outputResult" class="outputSection__output"></textarea>
+      <span class="visbleOnDecrypt outputSection__hidden flex-col hidden" id="outputSection__hidden"><img src="/assets/images/copiar.png" alt="clipboard icon" class="outputSection__hidden--icon">Copia el resultado en el campo de texto para desencriptar o ingresa un nuevo texto para encriptar.</span>
+      <div id="outputSection__btn" class="hidden outputSection__btn">
+        <button id="copy" class="btn-dark">Copiar</button>
+      </div>
     </section>
+    <div id="toastBox" class="toastBox hidden">
+      <div class="toastBox__content">
+        <img src="/assets/images/loaderGiphy.gif" alt="loader" class="toastBox__loader">
+          <span class="toastBox__message--text1">Texto copiado correctamente.</span>
+      </div>
+      <img id="closeIcon" src="/assets/images/cerrar.png" alt="close icon" class="close-icon">
+    </div>
   </main>
   <footer>
-
   </footer>
+  <script type="text/javascript" src="/assets/javascript/main.js"></script>
 </body>
-
+<!-- ! <p>.replace(): https://www.codemzy.com/blog/regex-groups-with-replace</p> -->
+<!-- ! <p>.replace():https://www.w3schools.com/jsref/jsref_replace.asp</p> -->
+<!-- ! <p>.match(): https://www.w3schools.com/jsref/jsref_match.asp</p> -->
+<!-- ! <p>disable spell checking in text areas: https://www.tutorialrepublic.com/faq/how-to-disable-spell-checking-in-html-forms.php</p> -->
 </html>
