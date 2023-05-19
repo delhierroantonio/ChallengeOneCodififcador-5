@@ -4,10 +4,11 @@
   02 - Globals
   03 - Helpers
   04 - Custom
-! */ 
+! */
 
 /* * 01 - reset css */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
 :root {
   --negro: #393939;
   --blue: #1a7cf4;
@@ -42,7 +43,11 @@
   vertical-align: baseline;
 }
 
-img, picture, video, iframe, figure {
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -74,7 +79,21 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
@@ -82,7 +101,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   color: inherit;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -90,11 +112,17 @@ blockquote:before, blockquote:after, q:before, q:after {
 ::-moz-selection {
   color: var(--blanco);
 }
+
 ::selection {
   color: var(--blanco);
 }
 
-form, input, textarea, select, button, label {
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   -webkit-hyphens: auto;
@@ -109,7 +137,9 @@ form, input, textarea, select, button, label {
   appearance: none;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -135,11 +165,24 @@ body {
 }
 
 /* *02- globals */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading);
 }
 
-p, span, a, strong, blockquote, i, b, u, em {
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-family: var(--paragraph);
 }
 
@@ -152,6 +195,7 @@ p, span, a, strong, blockquote, i, b, u, em {
 .d-none {
   display: none;
 }
+
 .hidden {
   visibility: hidden;
 }
@@ -246,6 +290,7 @@ p, span, a, strong, blockquote, i, b, u, em {
   transition: 0s;
   transform: translate(0, 5%);
 }
+
 /* #toast / popup modal */
 .toastBox {
   display: flex;
@@ -368,7 +413,7 @@ main.main {
   resize: none;
   margin-top: 3rem;
   text-align: center;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .inputSection__input::placeholder {
@@ -386,9 +431,10 @@ main.main {
   font-size: 1.2rem;
   line-height: 1.5;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: .8rem;
-  padding-bottom: 2REM;
+  padding-bottom: 2rem;
 }
 
 .inputSection__info img {
@@ -404,7 +450,7 @@ main.main {
   margin-bottom: 2rem;
 }
 
-.inputSection__buttons > * {
+.inputSection__buttons>* {
   flex: 0 1 10rem;
 }
 
