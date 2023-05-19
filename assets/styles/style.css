@@ -349,17 +349,17 @@ em {
 
 /* #section hidden */
 .outputSection__hidden {
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
   color: var(--negro);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .outputSection__hidden--icon {
   align-self: center;
   max-width: 2.5rem;
-  opacity: 0.8;
 }
 
 /* * 04 - custom */
