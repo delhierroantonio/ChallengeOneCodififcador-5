@@ -5,43 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/assets/styles/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <title>Encriptador | Oracle One Grupo 5</title> 
 </head>
 <body>
   <header>
     <nav class="nav flex-row">
-      <picture class="nav__logo"><img src="/assets/images/alura-logo.png" alt="alura company logo"></picture>
+      <picture class="nav__logo"><img src="assets/images/alura-logo.png" alt="alura company logo"></picture>
       <span class="nav__about">#challengeonecodificador5</span>
     </nav>
   </header>
   <main class="main">
     <section class="inputSection container">
       <textarea class="inputSection__input" spellcheck="false" placeholder="Ingrese el texto a encriptar o desencriptar aqui!"></textarea>
-      <span class="inputSection__info"><img src="/assets/images/info-icon.png" alt="info icon">Solo letras minúsculas y sin acentos</span>
+      <span class="inputSection__info"><img src="assets/images/info-icon.png" alt="info icon">Solo letras minúsculas y sin acentos</span>
       <div class="inputSection__buttons flex-row">
         <button id="encrypt" class="btn-dark">Encriptar</button>
         <button id="decrypt" class="btn-dark">Desencriptar</button>
       </div>
     </section>
     <section class="outputSection container">
-      <img src="/assets/images/illustration.svg" alt="user web interface illustration" id="outputSection__img" class="outputSection__img">
+      <img src="assets/images/illustration.svg" alt="user web interface illustration" id="outputSection__img" class="outputSection__img">
       <textarea spellcheck="false" placeholder="Ningun mensaje fue encontrado. El texto por encriptar/desencriptar aparecera aqui." readonly id="outputResult" class="outputSection__output"></textarea>
-      <span class="visbleOnDecrypt outputSection__hidden flex-col hidden" id="outputSection__hidden"><img src="/assets/images/copiar.png" alt="clipboard icon" class="outputSection__hidden--icon">Copia el resultado en el campo de texto para desencriptar o ingresa un nuevo texto para encriptar.</span>
+      <span class="visbleOnDecrypt outputSection__hidden flex-col hidden" id="outputSection__hidden"><img src="assets/images/copiar.png" alt="clipboard icon" class="outputSection__hidden--icon">Copia el resultado en el campo de texto para desencriptar o ingresa un nuevo texto para encriptar.</span>
       <div id="outputSection__btn" class="hidden outputSection__btn">
         <button id="copy" class="btn-dark">Copiar</button>
       </div>
     </section>
     <div id="toastBox" class="toastBox hidden">
       <div class="toastBox__content">
-        <img src="/assets/images/loaderGiphy.gif" alt="loader" class="toastBox__loader">
+        <img src="assets/images/loaderGiphy.gif" alt="loader" class="toastBox__loader">
           <span class="toastBox__message--text1">Texto copiado correctamente.</span>
       </div>
-      <img id="closeIcon" src="/assets/images/cerrar.png" alt="close icon" class="close-icon">
+      <img id="closeIcon" src="assets/images/cerrar.png" alt="close icon" class="close-icon">
     </div>
   </main>
-  <script type="text/javascript" src="/assets/javascript/main.js"></script>
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
 </body>
 
 </html>
