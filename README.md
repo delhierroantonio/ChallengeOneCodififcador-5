@@ -1,6 +1,6 @@
 <h1 align="center">
   <p align="center">Alura Oracle One - Encriptador Challenge</p>
-  <a href="https://delhierroantonio.github.io/ChallengeOneCodififcador-5/">
+  <a href="https://www.oracle.com/mx/education/oracle-next-education/">
   <img src="https://app.aluracursos.com/form-one/assets/images/logo-aluralatam-oracle.svg" alt="Alura logo">
   </a>
 </h1>
